@@ -8,10 +8,27 @@ import java.sql.Statement;
 
 public class StudentDao
 {
-	private String driver="com.mysql.jdbc.Driver";
-	private String url="jdbc:mysql://127.0.0.1:3306//user=root";
-	private String user="root";
-	private String password="Roshan@123";
+	private String driver;
+	private String url;
+	private String user;
+	private String password;
+	
+	public void setDriver(String driver) {
+		this.driver = driver;
+	}
+
+	public void setUrl(String url) {
+		this.url = url;
+	}
+
+	public void setUser(String user) {
+		this.user = user;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	public void selectAllRows() throws ClassNotFoundException, SQLException
 	{
 		//load the driver
